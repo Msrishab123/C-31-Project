@@ -43,7 +43,6 @@ function setup() {
     plinkos.push(new Plinko(j,375));
   }
 
-  //create particle objects
 
 }
  
@@ -55,7 +54,7 @@ function draw() {
  
   Engine.update(engine);
     //create particle objects
-if(frameCount%90 === 0){
+if(frameCount%60 === 0){
   particles.push(new Particles(random(width/2-10,width/2+10),10,10));
     }
   ground.display();
